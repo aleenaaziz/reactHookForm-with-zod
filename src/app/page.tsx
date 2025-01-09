@@ -23,6 +23,7 @@ export default function Home() {
 
   const onSubmit: SubmitHandler<FormFields> = async (data) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
+    console.log(data.email)
     alert("Form has been submitted succesfully");
     reset();
   };
